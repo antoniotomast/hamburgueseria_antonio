@@ -2,24 +2,24 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 
-img{
+img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-html{
-     /* para generar animaciones de puntos ancla */
+html {
+    /* para generar animaciones de puntos ancla */
     scroll-behavior: smooth;
 }
 
-:root{
+:root {
     --fuenteprincipal: 'Montserrat', sans-serif;
-    --fuentetitulos: 'Handlee', cursive; 
+    --fuentetitulos: 'Handlee', cursive;
     --colorprincipal: #fa573a;
     --colorsecundario: #21242e;
     --margingrid: 1em;
@@ -27,71 +27,71 @@ html{
     --anchomaximo: 68.75em;
 }
 
-.container{
+.container {
     max-width: var(--anchomaximo);
     margin: 0 auto;
 }
 
-body{
+body {
     font-family: var(--fuenteprincipal);
     font-size: var(--font-size);
 }
 
 /* inicio header */
 
-header .nav-top{
+header .nav-top {
     background-color: var(--colorsecundario);
     padding: 1.25em 0px;
 }
 
-header .nav-top .container{
+header .nav-top .container {
     display: flex;
     justify-content: space-around;
 }
 
-header .nav-top a{
+header .nav-top a {
     color: var(--colorprincipal);
     text-decoration: none;
 }
 
-header .nav-top a i{
+header .nav-top a i {
     font-size: 150%;
 }
 
-header .nav-top span{
+header .nav-top span {
     color: white;
     display: none;
 }
 
-header nav{
+header nav {
     padding: 1.25em;
 }
 
-header nav .container{
+header nav .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-header nav .menu{
+header nav .menu {
     width: 100%;
 }
 
-header nav .hamburguesa{
+header nav .hamburguesa {
     cursor: pointer;
     width: 1.875em;
 }
 
-header nav .hamburguesa div{
+header nav .hamburguesa div {
     border-top: 2px solid #aaa;
     margin-bottom: 0.625em;
 }
 
-header nav figure{
+header nav figure {
     max-width: 100px;
 }
 
-header nav .menu a{
+header nav .menu a {
     display: block;
     width: 100%;
     text-decoration: none;
@@ -101,43 +101,80 @@ header nav .menu a{
     border-bottom: 1px solid #aaa;
 }
 
-header nav .menu li:last-child a{
+header nav .menu li:last-child a {
     border-bottom: 0px;
 }
 
 
 /* final header */
 
+/* Inicio footer */
+
+footer {
+    background-color: var(--colorsecundario);
+    padding: 1.25em 0px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 110%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+/* Final footer */
+
+.flecha a {
+    display: block;
+    color: var(--colorprincipal);
+    font-size: 300%;
+    position: fixed;
+    bottom: 4.375rem;
+    right: 1.25rem;
+}
+
 /* inicio mediqueries */
-@media(min-width: 48em){
-    header .nav-top a i{
+@media(min-width: 48em) {
+    header .nav-top a i {
         font-size: 120%;
     }
 
-    header .nav-top span{
+    header .nav-top span {
         display: inline;
     }
 
-    header .nav-top .container{
+    header .nav-top .container {
         justify-content: space-between;
+    }
+
+    footer {
+        text-align: left;
     }
 }
 
-@media(min-width: 62.75em){
-    header nav .menu{
+@media(min-width: 62.75em) {
+    header nav .menu {
         width: auto;
     }
 
-    header nav .hamburguesa{
+    header nav .hamburguesa {
         display: none;
     }
 
-    header nav .menu li{
+    header nav .menu li {
         display: inline-block;
     }
 
-    header nav .menu a{
+    header nav .menu a {
         padding: 0.5em 0 1.25em 1.25em;
-        border-bottom:0px;
+        border-bottom: 0px;
     }
 }
