@@ -300,6 +300,48 @@ main section .enlace {
 
 /* Final our services */
 
+/* Inicio about us */
+
+main #aboutus .grid figure {
+    width: 100%;
+}
+
+main #aboutus .grid>div {
+    width: 100%;
+}
+
+main #aboutus .grid h3 {
+    font-size: 110%;
+    font-weight: 700;
+}
+
+main #aboutus .grid h4 {
+    margin: var(--margingrid) 0;
+    color: var(--colorprincipal);
+}
+
+main #aboutus .imagen {
+    width: 93%;
+    margin: 1.5em auto;
+}
+
+main #aboutus .imagen .marco {
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen .marco img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen:hover :is(.marco, .marco img) {
+    transform: rotateZ(0deg);
+}
+
+/* Final about us */
+
 /* inicio mediqueries */
 @media(min-width: 48em) {
     header .nav-top a i {
@@ -328,6 +370,19 @@ main section .enlace {
 
     main #services article:last-child {
         width: 100%;
+    }
+
+    main #aboutus .grid figure,
+    main #aboutus .grid>div {
+        width: 50%;
+    }
+
+    main #aboutus .grid h3 {
+        margin-top: var(--margingrid);
+    }
+
+    main #aboutus .imagen {
+        margin: var(--margingrid) 0 2em 0;
     }
 }
 
