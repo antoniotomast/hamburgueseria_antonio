@@ -280,15 +280,7 @@ main #blog .underline span {
     font-weight: 700;
 }
 
-#blog section article div {
-    position: relative;
-}
 
-#blog section article figure .fecha {
-    position: absolute;
-    background-color: var(--colorprincipal);
-    z-index: 0;
-}
 
 /* Final Blog */
 
@@ -590,6 +582,14 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
         height: 200px;
         width: 200px;
     }
+
+    #blog section {
+        display: flex;
+    }
+
+    #blog section article {
+        width: 33.333%;
+    }
 }
 
 @media(min-width: 62.75em) {
@@ -621,4 +621,6 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
     main #services article:last-child {
         width: 33.333%;
     }
+
+
 }
