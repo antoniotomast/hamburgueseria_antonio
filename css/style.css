@@ -116,6 +116,51 @@ header nav .menu li:last-child a {
 
 /* final header */
 
+/* Inicio Main */
+
+main #menu {
+    background-color: var(--colorsecundario);
+    margin: 0 auto;
+    padding: 1.25em;
+}
+
+main #menu h2 {
+    color: white;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main #menu h2>span {
+    color: var(--colorprincipal);
+}
+
+main #menu .underline {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
+}
+
+main #menu .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--colorprincipal);
+}
+
+main #menu .underline span {
+    text-align: center;
+    display: block;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+main #menu a {
+    text-decoration: none;
+}
+
+/* Final main */
+
 /* Inicio footer */
 
 footer {
@@ -299,6 +344,13 @@ main section .enlace {
 }
 
 /* Final our services */
+
+
+
+
+
+
+
 
 /* Inicio about us */
 
