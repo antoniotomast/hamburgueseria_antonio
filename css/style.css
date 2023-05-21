@@ -245,15 +245,49 @@ main #blog .underline span {
 
 #blog section {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0.5em
 }
 
 #blog section article {
-    width: 50%;
     flex-direction: row;
+    width: 50%;
+    padding: 1em;
 }
 
-#blog section:nth-child(3) {
-    flex-direction: column;
+#blog section article h5 {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#blog section article h6 {
+    color: var(--colorprincipal);
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+#blog section article p {
+    font-size: 0.9em;
+    word-spacing: 0, 1em;
+}
+
+#blog section article a {
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+#blog section article div {
+    position: relative;
+}
+
+#blog section article figure .fecha {
+    position: absolute;
+    background-color: var(--colorprincipal);
+    z-index: 0;
 }
 
 /* Final Blog */
