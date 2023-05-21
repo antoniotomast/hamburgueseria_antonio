@@ -116,7 +116,7 @@ header nav .menu li:last-child a {
 
 /* final header */
 
-/* Inicio Main */
+/* Inicio Menu */
 
 main #menu {
     background-color: var(--colorsecundario);
@@ -208,7 +208,55 @@ main #menu ul li:hover {
     margin-bottom: 2em;
 }
 
-/* Final main */
+/* Final Menu */
+
+/* Inicio Blog */
+
+main #blog h2 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main #blog h2>span {
+    color: var(--colorprincipal);
+}
+
+main #blog .underline {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
+}
+
+main #blog .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--colorprincipal);
+}
+
+main #blog .underline span {
+    text-align: center;
+    display: block;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+#blog section {
+    display: flex;
+}
+
+#blog section article {
+    width: 50%;
+    flex-direction: row;
+}
+
+#blog section:nth-child(3) {
+    flex-direction: column;
+}
+
+/* Final Blog */
 
 /* Inicio footer */
 
@@ -393,12 +441,6 @@ main section .enlace {
 }
 
 /* Final our services */
-
-
-
-
-
-
 
 
 /* Inicio about us */
