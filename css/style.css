@@ -183,10 +183,30 @@ main #menu ul li:hover {
 
 #menu .offers p {
     margin-top: 1.5em;
-    color: white;
 }
 
+#menu .tipos p {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+}
 
+#menu .tipos h5 {
+    color: white;
+    margin-top: 0.5em;
+}
+
+#menu .tipos h5 span {
+    color: var(--colorprincipal);
+    margin-left: 0.8em;
+}
+
+#menu .tipos a {
+    color: var(--colorprincipal);
+}
+
+#menu .tipos article {
+    margin-bottom: 2em;
+}
 
 /* Final main */
 
