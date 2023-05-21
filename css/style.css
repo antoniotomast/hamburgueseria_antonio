@@ -161,7 +161,6 @@ main #menu a {
 
 main #menu ul li a {
     color: white;
-
 }
 
 main #menu ul li {
@@ -172,6 +171,22 @@ main #menu ul li:hover {
     border-radius: 3px;
     background-color: var(--colorprincipal);
 }
+
+#menu h4 {
+    color: white;
+}
+
+#menu .offers .underline {
+    width: 3rem;
+    margin: 0;
+}
+
+#menu .offers p {
+    margin-top: 1.5em;
+    color: white;
+}
+
+
 
 /* Final main */
 
