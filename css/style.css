@@ -159,6 +159,20 @@ main #menu a {
     text-decoration: none;
 }
 
+main #menu ul li a {
+    color: white;
+
+}
+
+main #menu ul li {
+    margin-bottom: 0.5em;
+}
+
+main #menu ul li:hover {
+    border-radius: 3px;
+    background-color: var(--colorprincipal);
+}
+
 /* Final main */
 
 /* Inicio footer */
