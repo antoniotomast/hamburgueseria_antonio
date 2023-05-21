@@ -485,6 +485,35 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
     main #aboutus .imagen {
         margin: var(--margingrid) 0 2em 0;
     }
+
+    #menu .container {
+        display: flex;
+    }
+
+    #menu .titulomenu {
+        width: 100%;
+    }
+
+    #menu #container div {
+        display: flex;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #menu .tipos article {
+        display: flex;
+        width: 550px;
+    }
+
+    #menu .tipos article div {
+        width: 50%;
+        flex-direction: column;
+    }
+
+    #menu .tipos article figure {
+        height: 200px;
+        width: 200px;
+    }
 }
 
 @media(min-width: 62.75em) {
