@@ -116,7 +116,7 @@ header nav .menu li:last-child a {
 
 /* final header */
 
-/* Inicio Main */
+/* Inicio Menu */
 
 main #menu {
     background-color: var(--colorsecundario);
@@ -208,7 +208,81 @@ main #menu ul li:hover {
     margin-bottom: 2em;
 }
 
-/* Final main */
+/* Final Menu */
+
+/* Inicio Blog */
+
+main #blog h2 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main #blog h2>span {
+    color: var(--colorprincipal);
+}
+
+main #blog .underline {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
+}
+
+main #blog .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--colorprincipal);
+}
+
+main #blog .underline span {
+    text-align: center;
+    display: block;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+#blog section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5em
+}
+
+#blog section article {
+    flex-direction: row;
+    width: 50%;
+    padding: 1em;
+}
+
+#blog section article h5 {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#blog section article h6 {
+    color: var(--colorprincipal);
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+#blog section article p {
+    font-size: 0.9em;
+    word-spacing: 0, 1em;
+}
+
+#blog section article a {
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+
+
+/* Final Blog */
 
 /* Inicio footer */
 
@@ -395,12 +469,6 @@ main section .enlace {
 /* Final our services */
 
 
-
-
-
-
-
-
 /* Inicio about us */
 
 main #aboutus .grid figure {
@@ -514,6 +582,14 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
         height: 200px;
         width: 200px;
     }
+
+    #blog section {
+        display: flex;
+    }
+
+    #blog section article {
+        width: 33.333%;
+    }
 }
 
 @media(min-width: 62.75em) {
@@ -545,4 +621,6 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
     main #services article:last-child {
         width: 33.333%;
     }
+
+
 }
